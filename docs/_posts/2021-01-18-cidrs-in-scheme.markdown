@@ -15,7 +15,8 @@ Here is that work!
 
 > (define (cidr slash)
     (let ([power-of-two (- 32 slash)])
-      (format "~a addresses, subnet mask: 255.255.255.~a" (expt 2 power-of-two) (- 255 (- (expt 2 power-of-two) 1)))))
+      (format "~a addresses, subnet mask: 255.255.255.~a" 
+        (expt 2 power-of-two) (- 255 (- (expt 2 power-of-two) 1)))))
 
 > (cidr 26)
 "64 addresses, subnet mask: 255.255.255.192"
