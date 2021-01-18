@@ -4,7 +4,7 @@ title: "Dealing with CIDRs in Scheme"
 date: 2021-01-18 12:00:00 -0000
 categories: scheme networking racket
 ---
-I'm always forgetting how to convert a [CIDR] into a netmask. I remembered
+I'm always forgetting how to convert a [CIDR][CIDR] into a netmask. I remembered
 the part about (32 - the CIDR) telling you the important part. But I
 forgot that the important part it tells you is that this gives you the power of 2, and
 you still need to do some work to get from that to the number of addresses, and the subnet mask you need.
@@ -23,4 +23,4 @@ Here is that work!
 
 ```
 
-[CIDR] https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+[CIDR]: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
