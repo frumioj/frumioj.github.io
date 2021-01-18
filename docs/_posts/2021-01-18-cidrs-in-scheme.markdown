@@ -22,5 +22,6 @@ Here is that work!
 "64 addresses, subnet mask: 255.255.255.192"
 
 ```
+Now, will this make me better remember how to calculate the subnet mask when I next see a CIDR? Or will I now better forget because I wrote a function to tell me?
 
 [CIDR]: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
