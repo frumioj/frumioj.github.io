@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+I am stable.pseudonym@gmail.com, yes I am.
+
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
