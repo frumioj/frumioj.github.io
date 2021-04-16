@@ -62,7 +62,52 @@ Once I understood the syntax, I got this working pretty quickly. It just didn't 
   (reverse (bitz-iter n '())))
 ```
 
-I have no idea of how this compares to the Python generator approach, but seems to be O(2k) where k is the number of bit-shift operations on n, or the length of the list produced. Reversing the list is O(k) too, hence the O(2k). 
+How does this compare to the Python generator approach? The Scheme version above seems to be O(2k) where k is the number of bit-shift operations on n, or the length of the list produced. Reversing the list is O(k) too, hence the O(2k). The Python version claims to be O(k), so that's about right, and if I could avoid the reverse operation on the list, I'd be right alongside. 
 
+Here's the actual 'double and add'.  
 
+```scheme
+;;; Add up the elements of the list
+;;; to produce the "sum of the list"
+
+(define (list+-iter l sum)
+  (cond [(empty? l) sum]
+        [else
+         (list+-iter (cdr l) (+ sum (car l)))]))
+
+(define (list+ l)
+  (list+-iter l 0))
+
+;;; create a sequence of numbers, starting
+;;; with n, where successive members are the
+;;; previous number in the list, multiplied by 2.
+;;; The length of the list is determined by the bit list
+;;; passed in, indicating the number of *2 items that are
+;;; needed, since I need two lists of the same size to run a map
+;;; (see below).
+
+(define (multsof2 n bitlist mults)
+  (cond [(empty? bitlist) (reverse mults)]
+        [(empty? mults)
+         (multsof2 n (cdr bitlist) (cons n mults))]
+        [else
+         (multsof2 n (cdr bitlist) (cons (* (car mults) 2) mults))]))
+
+;;; Use the double and add method to multiply
+;;; n and x
+
+(define (dub_n_add n x)
+  (let* ([b (bitz n)]
+         [m (multsof2 x b '())])
+    (list+
+     (map (lambda (bit mult)
+            (cond [(= bit 1) mult]
+                  [else 0]))
+          b
+          m))))
+```
+
+I precompute a list of 2* multiples of the multiplier that is the same size as the list of bits that is created by the above code. That gives me two lists to run a 'map' on, at which point the actual map is easy - if the bit is set, then add the correct (multiplier * 2) chosen by its position in the list. Once the list is complete, sum it. 
+
+Perhaps a better (more efficient) way would be to sum as I go, creating an accumulator, rather than post-processing the list. But that's for another day...
 
