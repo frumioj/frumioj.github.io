@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Resizing a Debian VM in Qemu/KVM"
-date: 2021-01-18 12:00:00 -0000
+date: 2021-12-01 14:38:00 -0000
 categories: devops thingsiforget
 ---
 Yet Another Thing That I Always Forget (YATTIAF?), which is potentially tricky, and which I'm documenting here as much because I want to help myself remember as because it might be useful to anyone else, is how to fully resize a disk image for my VMs. When I say "fully", I mean not only the `qemu-img` part (which is really very easy) but what happens once you have a bigger disk image file, but your VM partitions don't yet use it. 
