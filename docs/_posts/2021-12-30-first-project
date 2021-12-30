@@ -1,0 +1,13 @@
+---
+layout: post
+title: ""
+date: 2021-01-18 12:00:00 -0000
+categories: clipper dbase c assembler windows
+---
+It was my first fulltime job after graduating from university. I'd been hired by a prominent building society
+(mortgage bank). We were an IBM shop, and I'd been lucky enough to work with IBM's innovative OS/2 operating
+system, but Bob, the company CTO was very much a fan of Windows (3?). In the meantime though, we had 550 branch
+offices all running [IBM 3270 financial controller terminals](https://en.wikipedia.org/wiki/IBM_3270) connected
+via coax, to our mighty old mainframe. 
+
+The big plan of the day was to replace that little lot with PCs running Windows, and a local area (token ring) network in each office. 
