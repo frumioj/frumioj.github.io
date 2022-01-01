@@ -11,3 +11,13 @@ offices all running [IBM 3270 financial controller terminals](https://en.wikiped
 via coax, to our mighty old mainframe. 
 
 The big plan of the day was to replace that little lot with PCs running Windows, and a local area (token ring) network in each office. 
+
+The first part (PCs) had been done, but so far, they were just running a DOS 3270 terminal emulator, and showing the dull old CICS mainframe mortgage "app".
+
+Bob was excited to install Windows everywhere - his pet project. But the executives knew it would be some time before this was financially possible. 
+
+So they asked Bob if it were possible to get some of the features available in Windows...
+
+Multiple windows open at the same time! 
+
+Contextual help screens by pressing F1!
