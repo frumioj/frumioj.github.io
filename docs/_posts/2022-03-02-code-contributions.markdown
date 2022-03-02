@@ -48,7 +48,7 @@ _Programming languages:_ **Java, C, Symbian C++**
 
 Performance constraints: memory on mobile phones, latency in early mobile networks, poor mobile support for cryptography algorithms.
 
-* Nokia object capability-based web browser
+* Object capability-based web browser
 
 Webkit-based multi-process web browser that separated memory per-URL for all internet resources (each URL handled by a separate OS process)
 
