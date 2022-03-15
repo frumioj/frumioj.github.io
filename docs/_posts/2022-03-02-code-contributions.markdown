@@ -40,7 +40,7 @@ _Programming languages:_ **Javascript, Java**
 
 Performance constraints: latency of early Internet systems.
 
-* Serene: a web services framework (https://github.com/SymbianSource/oss.FCL.sf.mw.websrv/tree/master/webservices)
+* Serene: [a web services framework](https://github.com/SymbianSource/oss.FCL.sf.mw.websrv/tree/master/webservices)
 
 A framework for the Series 60 (Symbian) mobile phone, implementing support for the Liberty ID-WSF and Microsoft/IBM WS-STAR SOAP/XML specifications to allow the use of mobile-phone based privacy-preserving web services. This was deployed most recently to 3 million Nokia S60 phones as the basis for the Microsoft Windows Live Messenger Symbian port. I then ported portions of this also to Linux/D-BUS in C.
 
@@ -68,7 +68,7 @@ Wrote Java servlet-based system for implementing OAuth access to our APIs (https
 
 _Programming languages:_ **Java**
 
-* Implementing W3C timed-text captions in ccextractor (https://github.com/frumioj/ccextractor)
+* Implementing W3C timed-text captions in [ccextractor](https://github.com/frumioj/ccextractor)
 
 Added support for W3C Timed Text to the ccextractor open source project, on behalf of ESPN (which needed this for Windows).
 
