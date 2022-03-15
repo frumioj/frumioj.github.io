@@ -20,19 +20,19 @@ Performance constraints: DOS 640k memory limit, use of assembly language to acce
 
 * Mortgage APR/compound interest calculator (1991/1992)
 
-An application that created mortgage quotations for bank customers, using a successive approximations algorithm (see https://www.mtgprofessor.com/formulas.htm for a related explanation). This cut the mortgage quotation/application timeframe from 2+ days to 20 minutes, and could be conducted fully with the customer while in the office.
+An application that created mortgage quotations for bank customers, using a successive approximations algorithm [related explanation](https://www.mtgprofessor.com/formulas.htm). This cut the mortgage quotation/application timeframe from 2+ days to 20 minutes, and could be conducted fully with the customer while in the office.
 
 _Programming languages:_ **Clipper/dBase, C**
 
 Performance constraints: follow legally-approved algorithms for calculating APR/compound interest, fastest-possible calculation given commodity PC hardware, DOS 640k memory limit.
 
-* Clickshare (https://www.clickshare.com) micropayments system (1995-1996)
+* [Clickshare](https://www.clickshare.com) micropayments system (1995-1996)
 
 A multi-party micropayments system for allowing small payments for newspaper articles.
 
 _Programming languages_: **C**
 
-*  Employease Network (Acquired by ADP, and now called https://workforcenow.adp.com/) employee benefits system (1997-2000)
+*  Employease Network (Acquired by ADP, and now called [https://workforcenow.adp.com/](https://workforcenow.adp.com/) employee benefits system (1997-2000)
 
 One of the very first "software as a service" applications (1997), Employease offered a browser-based interface for managing employee benefits, targeted at insurance brokers, but also providing the very first employee "self-service" interface for managing their own benefits. I was employee #10, and wrote much of the early code for the self-service system. This was originally written in the Netscape Livewire server-side Javascript language, and later replaced by Java servlets.
 
@@ -76,7 +76,7 @@ _Programming languages:_ **C**
 
 * Lilith - a system for delivering video chunks out of order to better utilize massive bandwidth
 
-Described for the Erlang Factory conference: http://www.erlang-factory.com/conference/SFBay2013/speakers/JohnKemp System used a Javascript client, websocket connections to a server which ran Erlang, and the Dynamo DB-based riak-core library to store and deliver video chunks.
+Described for the [Erlang Factory conference](http://www.erlang-factory.com/conference/SFBay2013/speakers/JohnKemp) System used a Javascript client, websocket connections to a server which ran Erlang, and the Dynamo DB-based riak-core library to store and deliver video chunks.
 
 _Programming languages:_ **Erlang, Javascript**
 
@@ -92,7 +92,7 @@ ii) Simple-signing service - a service for signing XML and JSON data using keys 
 
 _Programming languages:_ **go-lang, C**
 
-12. Cosmos SDK/Keystone (https://github.com/cosmos/cosmos-sdk/pull/9738, https://github.com/frumioj/crypto11, https://github.com/capnproto/go-capnproto2/pull/204 and https://github.com/frumioj/keystone for some recent contributions)
+12. Cosmos SDK/Keystone [low-s normalization](https://github.com/cosmos/cosmos-sdk/pull/9738), [Adding secp256k1 to pkcs11 lib](https://github.com/frumioj/crypto11), [example usage of capnproto](https://github.com/capnproto/go-capnproto2/pull/204) and [Keystone key-management for Cosmos](https://github.com/frumioj/keystone) for some recent contributions)
 
 Implementing a distributed key management system for the Cosmos SDK - an SDK used in the creation of a number of blockchain-based systems, utilizing HSMs.
 
